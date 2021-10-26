@@ -1,0 +1,40 @@
+package lt.varle;
+
+import java.text.DecimalFormat;
+
+//1.2.Naudokite funkcija Math.random(). Sukurkite du kintamuosius ir naudodamiesi funkcija Math.random()
+// jiems priskirkite atsitiktines reikšmes nuo 0 iki 4. Didesnę reikšmę padalinkite iš mažesnės.
+// Atspausdinkite rezultatą jį suapvalinę iki 2 skaičių po kablelio.
+//
+public class Main {
+    public static void main(String[] args) {
+        double sk1, sk2;
+        int max = 4;
+        sk1= Math.floor(Math.random()*max);
+        sk2= Math.floor(Math.random()*max);
+        System.out.println("Pradiniai duomenys: \n");
+        System.out.println(sk1+"\n");
+        System.out.println(sk2);
+        DecimalFormat dForm = new DecimalFormat( "0.00");
+        double ats=0;
+        if (sk1>sk2){
+            ats = sk2/sk1;
+        }
+        else if(sk1<sk2){
+            ats = sk1/sk2;
+        }
+        else if(sk1 == sk2){
+            ats= -1;
+            System.out.print("\n" + "Skaičiai vienodi" + "\n" );
+        }
+        String formated = dForm.format(ats);
+        System.out.print("\n Suformuotas atsakymas iki 2 sk po kablelio: " + formated);
+    }
+}
+Results:
+"C:\Program Files\Java\jdk-13.0.2\bin\java.exe" "-javaagent:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2021.2.3\lib\idea_rt.jar=55960:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2021.2.3\bin" -Dfile.encoding=UTF-8 -classpath C:\Users\Violeta\IdeaProjects\firstProject\out\production\firstProject lt.varle.Main
+Pradiniai duomenys:
+2.0
+1.0
+ Suformuotas atsakymas iki 2 sk po kalblelio: 0.50
+Process finished with exit code 0

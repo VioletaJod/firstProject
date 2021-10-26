@@ -1,0 +1,43 @@
+package lt.varle;
+
+import java.text.DecimalFormat;
+
+//1.3.	Naudokite funkcija Math.random(). Sukurkite tris kintamuosius ir naudodamiesi funkcija Math.random() jiems
+// priskirkite atsitiktines reikšmes nuo 0 iki 25. Raskite ir atspausdinkite kintąmąjį turintį vidurinę reikšmę.
+//
+public class Main {
+    public static void main(String[] args) {
+        double sk1, sk2,sk3;
+        int max = 25;
+        sk1= Math.floor(Math.random()*max);
+        sk2= Math.floor(Math.random()*max);
+        sk3= Math.floor(Math.random()*max);
+        System.out.print(sk1+"---" + sk2 + "---" + sk3);
+        if (sk1 > sk2 && sk2 > sk3){
+            System.out.print("\n" + sk2);
+        }
+        else if(sk1 < sk2 && sk2 < sk3){
+            System.out.print("\n" + sk2);
+        }
+        else if(sk2 > sk3 && sk3 > sk1){
+            System.out.print("\n" + sk3);
+        }
+        else if(sk2 < sk3 && sk3 < sk1){
+            System.out.print("\n" + sk3);
+        }
+        else if(sk2 > sk1 && sk1 > sk3){
+            System.out.print("\n" + sk1);
+        }
+        else if(sk2 < sk1 && sk1 < sk3){
+            System.out.print("\n" + sk1);
+        }
+       System.out.print("\n Turime kelias vienodas kintamųjų reikšmes.");
+    }
+}
+Results:
+"C:\Program Files\Java\jdk-13.0.2\bin\java.exe" "-javaagent:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2021.2.3\lib\idea_rt.jar=49867:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2021.2.3\bin" -Dfile.encoding=UTF-8 -classpath C:\Users\Violeta\IdeaProjects\firstProject\out\production\firstProject lt.varle.Main
+22.0---19.0---6.0
+19.0
+ Turime kelias vienodas kintamųjų reikšmes.
+Process finished with exit code 0
+

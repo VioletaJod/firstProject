@@ -1,0 +1,24 @@
+package lt.varle;
+//6.	Sukurti kintamąjį su stringu: “An American in Paris”. Jame ištrinti visas balses. Rezultatą atspausdinti.
+//        Kodą pakartoti su stringais: “Breakfast at Tiffany's”, “2001: A Space Odyssey” ir “It's a Wonderful Life”.
+
+public class Main {
+    public static void main(String[] args) {
+        String str = "An American in Paris";
+        System.out.println("An American in Paris".replaceAll("[AEIOUaeiou]", ""));
+    }
+}
+package lt.varle;
+//6.	Sukurti kintamąjį su stringu: “An American in Paris”. Jame ištrinti visas balses. Rezultatą atspausdinti.
+//        Kodą pakartoti su stringais: “Breakfast at Tiffany's”, “2001: A Space Odyssey” ir “It's a Wonderful Life”.
+
+public class Main {
+    public static void main(String[] args) {
+        String str ="Breakfast at Tiffany's" + "2001: A Sapace Odyssey" + "It's a Wonderful Life";
+        System.out.println(("Breakfast at Tiffany's" + ";" + "2001: A Sapace Odyssey" + ";" +  "It's a Wonderful Life").replaceAll("[AEIOUaeiou]", ""));
+    }
+}
+
+Results:
+    n mrcn n Prs
+ Brkfst t Tffny's;2001:  Spc dyssy;t's  Wndrfl Lf

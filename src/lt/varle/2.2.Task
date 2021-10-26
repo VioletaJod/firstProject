@@ -1,0 +1,12 @@
+//2.Sukurti du kintamuosius. Jiems priskirti savo mylimo aktoriaus vardą ir pavardę kaip stringus.
+//        Vardą atspausdinti tik didžiosiom raidėm, o pavardę tik mažosioms. (LEONARDO dicaprio)
+
+public class Main {
+
+    public static void main(String[] args) {
+        String name = "Nicole";
+        String surname = "Kidman";
+        System.out.println(name.toUpperCase()+ " " + surname.toLowerCase());
+    }
+}
+Result: NICOLE kidman

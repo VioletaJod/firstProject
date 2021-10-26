@@ -1,0 +1,15 @@
+package lt.varle;
+///7.	Stringe, kurį generuoja toks kodas: ""Star Wars: Episode"
+//        + " ".repeat( (int) (Math.random() * 10))+((int) (Math.random() * 7)+1) + "- A New Hope"
+//        Surasti ir atspausdinti epizodo numerį.
+
+public class Main {
+    public static void main(String[] args) {
+        String starWars ="Star Wars: Episode" + " ".repeat( (int) (Math.random() * 10))+((int) (Math.random() * 7)+1) + "- A New Hope";
+
+        System.out.println(starWars.substring(starWars.length()-14,starWars.length()-12));
+
+    }
+
+  }
+Result:4

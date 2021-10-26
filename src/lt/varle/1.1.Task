@@ -1,0 +1,20 @@
+package lt.varle;
+public class Main {
+    public static void main(String[] args) {
+        String name = "Violeta";
+        String surname = "Violetine";
+        int birthYear = 1981;
+        int actualYear = 2021;
+        System.out.println("As esu " + name + " " + surname + ". Man yra " + (actualYear - birthYear) + " metu");
+
+        String name1 = "Virga";
+        String lastName = "Vigaite";
+        int birthYear1 = 1987;
+        int actualYear1 = 2021;
+        System.out.println(name1 +" yra mano drauge. Jos pavarde " + lastName + " ir ji yra " + (actualYear1 - birthYear1) + " metu.");
+    }
+}
+
+Results:
+As esu Violeta Violetine. Man yra 40 metu
+Virga yra mano drauge. Jos pavarde Vigaite ir ji yra 34 metu.

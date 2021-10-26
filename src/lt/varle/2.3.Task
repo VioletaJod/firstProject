@@ -1,0 +1,15 @@
+
+ //3.	Sukurti du kintamuosius. Jiems priskirti savo mylimo aktoriaus vardą ir pavardę kaip stringus.
+ //        Sukurti trečią kintamąjį ir jam priskirti stringą, sudarytą iš pirmų vardo ir pavardės kintamųjų raidžių.
+ //        Jį atspausdinti.
+
+ public class Main {
+         public static void main(String[] args) {
+             String name = "Leonardo";
+             String surname = "Dicaprio";
+             String ns = name.charAt(0) + ""+surname.charAt(0);
+             System.out.println(ns);
+
+         }
+ }
+Result: LD

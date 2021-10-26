@@ -1,0 +1,16 @@
+package lt.varle;
+//4.	Sukurti du kintamuosius. Jiems priskirti savo mylimo aktoriaus vardą ir pavardę kaip stringus.
+//        Sukurti trečią kintamąjį ir jam priskirti stringą, sudarytą iš trijų paskutinių vardo ir pavardės
+//        kintamųjų raidžių. Jį atspausdinti.
+
+public class Main {
+        public static void main(String[] args) {
+            String name = "Leonardas";
+            String surname = "Dicaprio";
+            System.out.println(name.substring(name.length()-3) + surname.substring(surname.length()-3));
+        }
+}
+
+Result: dasrio
+
+

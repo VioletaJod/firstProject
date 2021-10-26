@@ -1,0 +1,15 @@
+package lt.varle;
+
+1.	Sukurti du kintamuosius. Jiems priskirti savo mylimo aktoriaus vardą ir pavardę kaip stringus (Jonas Jonaitis).
+Atspausdinti trumpesnį stringą.
+
+    public class Main {
+
+    public static void main(String[] args) {
+        String name = "Nicole";
+        String surname = "Kidman";
+        System.out.println(name+ " " + surname);
+    }
+}
+
+Result: Nicole Kidman
